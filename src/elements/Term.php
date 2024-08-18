@@ -201,7 +201,7 @@ class Term extends Element
     /**
      * @inheritDoc
      */
-    public function tableAttributeHtml(string $attribute): string
+    public function attributeHtml(string $attribute): string
     {
         if ($attribute === 'caseSensitive') {
             return $this->caseSensitive ? '<div data-icon="check" aria-label="' . Craft::t('app', 'Yes') . '""></div>' : '';
@@ -217,7 +217,7 @@ class Term extends Element
     /**
      * @inheritDoc
      */
-    protected static function defineFieldLayouts(string $source): array
+    protected static function defineFieldLayouts(?string $source): array
     {
         if ($source === '*') {
             $glossaries = GlossaryPlugin::getInstance()->getGlossaries()->getAllGlossaries();
