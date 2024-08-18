@@ -210,7 +210,7 @@ class Glossary extends Element
             return Term::find()->glossaryId($this->id)->count();
         }
 
-        return parent::tableAttributeHtml($attribute);
+        return parent::attributeHtml($attribute);
     }
 
     /**

@@ -211,7 +211,7 @@ class Term extends Element
             return $this->matchSubstring ? '<div data-icon="check" aria-label="' . Craft::t('app', 'Yes') . '""></div>' : '';
         }
 
-        return parent::tableAttributeHtml($attribute);
+        return parent::attributeHtml($attribute);
     }
 
     /**
